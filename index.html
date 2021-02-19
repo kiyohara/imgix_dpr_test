@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <style>
+      td {
+        padding: 3px;
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      .spacer {
+        display: block;
+        width: 70px;
+      }
+
+      .col2 img {
+        width: 362px;
+      }
+
+      .col3 img {
+        width: 262px;
+      }
+
+      .col4 img {
+        width: 248px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h3>2 col</h3>
+
+    <table class="col2">
+      <tr>
+        <td colspan=2>original</td>
+        <td class="spacer"></td>
+        <td colspan=2>for @3x</td>
+        <td class="spacer"></td>
+        <td colspan=2>for @2x</td>
+        <td class="spacer"></td>
+        <td colspan=2>for @1x</td>
+      </tr>
+
+      <tr>
+        <td colspan=2>original(1200px) : 136kB</td>
+        <td></td>
+        <td colspan=2>original(1200px) : 136kB → 362x3(1089px) : 118kB</td>
+        <td></td>
+        <td colspan=2>original(1200px) : 136kB → 362x2(724px) : 62.2kB</td>
+        <td></td>
+        <td colspan=2>original(1200px) : 136kB → 362x1 : 19.7kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>medium(560px) : 40.4kB</td>
+        <td></td>
+        <td colspan=2>medium(560px) : 40.4kB → same(fit=max)</td>
+        <td></td>
+        <td colspan=2>medium(560px) : 40.4kB → same(fit=max)</td>
+        <td></td>
+        <td colspan=2>medium(560px) : 40.4kB → 362x1 : 19.7kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h3>3 col</h3>
+
+    <table class="col3">
+      <tr>
+        <td colspan=3>original</td>
+        <td class="spacer"></td>
+        <td colspan=3>for @3x</td>
+        <td class="spacer"></td>
+        <td colspan=3>for @2x</td>
+        <td class="spacer"></td>
+        <td colspan=3>for @1x</td>
+      </tr>
+
+      <tr>
+        <td colspan=3>original(1200px) : 136kB</td>
+        <td></td>
+        <td colspan=3>original(1200px) : 136kB → 262x3(786px) : 70.8kB</td>
+        <td></td>
+        <td colspan=3>original(1200px) : 136kB → 262x2(524px) : 35.9kB</td>
+        <td></td>
+        <td colspan=3>original(1200px) : 136kB → 262x1 : 11.0kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+      </tr>
+
+      <tr>
+        <td colspan=3>medium(560px) : 40.4kB</td>
+        <td></td>
+        <td colspan=3>medium(560px) : 40.4kB → same(fit=max)</td>
+        <td></td>
+        <td colspan=3>medium(560px) : 40.4kB → 262x2(524px) : 35.9kB</td>
+        <td></td>
+        <td colspan=3>medium(560px) : 40.4kB → 262x1 : 11.0kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=262&dpr=1&fit=max"></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h3>4 col</h3>
+
+    <table class="col4">
+      <tr>
+        <td colspan=4>original</td>
+        <td class="spacer"></td>
+        <td colspan=4>for @3x</td>
+        <td class="spacer"></td>
+        <td colspan=4>for @2x</td>
+        <td class="spacer"></td>
+        <td colspan=4>for @1x</td>
+      </tr>
+
+      <tr>
+        <td colspan=4>original(1200px) : 136kB</td>
+        <td></td>
+        <td colspan=4>original(1200px) : 136kB → 248x3(744) : 63.7kB</td>
+        <td></td>
+        <td colspan=4>original(1200px) : 136kB → 248x2(568px) : 32.8kB</td>
+        <td></td>
+        <td colspan=4>original(1200px) : 136kB → 248x1 : 10.0kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+      </tr>
+
+      <tr>
+        <td colspan=4>medium(560px) : 40.4kB</td>
+        <td></td>
+        <td colspan=4>medium(560px) : 40.4kB → same(fit=max)</td>
+        <td></td>
+        <td colspan=4>medium(560px) : 40.4kB → 248x2(496px) : 32.8kB</td>
+        <td></td>
+        <td colspan=4>medium(560px) : 40.4kB → 248x1 : 10.0kB</td>
+      </tr>
+
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=3&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=2&fit=max"></td>
+        <td></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/medium_8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=248&dpr=1&fit=max"></td>
+      </tr>
+    </table>
+  </body>
+</html>
