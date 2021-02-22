@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+  </head>
+  <body>
+    <p>imgix converting source: <b>Original image(1200px)</b> ... <small><a href="med_2col.html">Medium</a></small></p>
+    <p><b>2 col (screen: ~768px / image width: 362px)</b> ... <small><a href="ori_3col.html">3col</a>, <a href="ori_4col.html">4col</a></small></p>
+
+    <table class="col2">
+      <tr>
+        <td colspan=2>
+          <b>no imgix converting</b><br>
+          original(1200px) : 136kB
+        </td>
+      </tr>
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg"></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>
+          <b>for @3x converting</b><br>
+          <small>original(1200px) : 136kB</small> → 362x3=1086px : 118kB
+        </td>
+      </tr>
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=3&fit=max"></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>
+          <b>for @2x converting</b><br>
+          <small>original(1200px) : 136kB</small> → 362x2=724px : 62.2kB
+        </td>
+      </tr>
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=2&fit=max"></td>
+      </tr>
+
+      <tr>
+        <td colspan=2>
+          <b>for @1x converting</b><br>
+          <small>original(1200px) : 136kB</small> → 362px : 19.7kB
+        </td>
+      </tr>
+      <tr>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+        <td><img src="https://static.camp-fire.jp/uploads/project_version/image/591834/8ee72cd4-17f9-41d3-b3f3-2a51a32e67b3.jpg?w=362&dpr=1&fit=max"></td>
+      </tr>
+      </tr>
+    </table>
+  </body>
+</html>

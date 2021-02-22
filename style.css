@@ -1,0 +1,25 @@
+td {
+  padding: 3px;
+  text-align: center;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+.spacer {
+  display: block;
+  width: 70px;
+}
+
+.col2 img {
+  width: 362px;
+}
+
+.col3 img {
+  width: 262px;
+}
+
+.col4 img {
+  width: 248px;
+}
